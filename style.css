@@ -1,0 +1,19 @@
+body{
+    background-color: #eeeeee;/*podemos definir en las secciones de presentación diferentes fondos*/
+    color: #212121;
+    /*definir font-family*/
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+}
+header{
+    background-color: #D1C4E9;
+    /*definir font-family*/
+    font-family: 'Bungee Spice', cursive;
+}
+nav{
+    background-color: #DCEDC8;
+}
+footer{
+    background-color: #1D1833;
+    color: #fff;
+}
