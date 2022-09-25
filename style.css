@@ -57,6 +57,11 @@ main {
     float: left;
   }
 
+.leermas {
+    color: white;
+    text-align: right;
+}
+
 footer{
     display: flex;
     justify-content: center;
