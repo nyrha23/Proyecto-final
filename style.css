@@ -1,4 +1,7 @@
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #eeeeee;/*podemos definir en las secciones de presentación diferentes fondos*/
     color: #212121;
     /*definir font-family*/
