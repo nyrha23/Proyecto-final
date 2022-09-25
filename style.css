@@ -4,16 +4,99 @@ body{
     /*definir font-family*/
     font-family: 'Indie Flower', cursive;
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 header{
+    display: flex;  
+    justify-content: center;
     background-color: #D1C4E9;
     /*definir font-family*/
     font-family: 'Bungee Spice', cursive;
+
 }
 nav{
+    display: flex;
+    justify-content: center;
     background-color: #DCEDC8;
+
 }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.vineta {
+    background-color: #fff;
+    border-radius: 1px 50px 1px 50px;
+    width: 20%;
+    margin: 5%;
+    padding: 2%;
+}
+
+.los80 {
+    display: flex;
+    background-color: RGB(117,122,141);
+    padding: 2%;
+}
+.los90 {
+    display: flex;
+    background-color: RGB(141,117,117);
+    padding: 2%;
+}
+.s21 {
+    display: flex;
+    background-color: RGB(117,141,119);
+    padding: 2%;
+}
+
+.consola  {
+    padding: 1%;
+    width: 250px;
+    float: left;
+  }
+
 footer{
+    display: flex;
+    justify-content: center;
     background-color: #1D1833;
     color: #fff;
+    padding: 1% 5%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: orange;
+}
+
+.autores {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 33%;
+}
+
+.rrss {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.footerlogo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.icorrss {
+    margin: 0 5px;
 }
