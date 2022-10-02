@@ -127,6 +127,10 @@ footer a:hover {
     color: orange;
 }
 
+footer ul {
+    margin: 0;
+}
+
 .autores {
     display: flex;
     justify-content: start;
@@ -153,6 +157,48 @@ footer a:hover {
 .icorrss {
     margin: 0 5px;
 }
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+    opacity: 0.7;
+  }
+  .polaroid a:after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+    text-align: center;
+
+  }
+  .polaroid img {
+    display: block;
+    width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .polaroid a:hover {
+    opacity: 1;
+  }
+
+
 
 @media only screen and (max-width: 800px) {
     .consola  {         /*Ocultar imágenes de consolas en mobile*/
