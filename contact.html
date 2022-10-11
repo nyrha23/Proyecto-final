@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/logo-al17.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <title id="title">Cápsula del tiempo</title>
-    <!--link de google font-->
+    <!--link de google3ox font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
@@ -39,56 +39,69 @@
   </nav>
 </div>
 <main>
-        <div class="gallery">
+        <div class="contacto">
 
-            <div class="polaroid">
-                <a href="#" title="NeoGeo (año)">   <!-- ¿Tal vez un enlace que dirija al artículo de wikipedia sobre la consola? o al sitio oficial?--> 
-                  <img height="250" src="/img/consoles/01 Neo Geo.jpg" alt="NeoGeo" title="NeoGeo (año)" />
+            <div class="polaroidcontacto">
+              <div class="containercontact">
+                <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="nombre">Nombre <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="apellido">Apellido <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="correo">Correo <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="correo" name="correo" placeholder="Ingrese su correo...">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="telefono">Teléfono <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono...">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="asunto">Asunto <span class="aste">*</span></label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="asunto" name="asunto" placeholder="Escriba aquí su mensaje..." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <span class="note"><span class="aste">*</span> Obligatorio</span>
+                <br><br>
+                <div class="row">
+                  <input type="reset" value="Borrar">
+                  <input type="submit" value="Enviar">
+                </div>
+                </form>
+              </div>
+        
+              </div>
+              <div class="imgcontacto">
+                  <img src="/img/contact.png" alt= />
                 </a>
               </div>
 
-              <div class="polaroid">
-                <a href="#" title="Atari 2600 (año)">
-                  <img height="250" src="/img/consoles/atari2600.jpg" alt="Atari 2600" title="Atari 2600 (año)" />
-                </a>
-              </div>
 
-              <div class="polaroid">
-                <a href="#" title="Game Boy Advance (año)">
-                  <img height="250" src="/img/consoles/gba.jpg" alt="Game Boy Advance" title="Game Boy Advance (año)" />
-                </a>
-              </div>
-
-              <div class="polaroid">
-                <a href="#" title="MAME (año)">
-                  <img height="250" src="/img/consoles/mame.png" alt="Mame" title="Mame (año)" />
-                </a>
-              </div>
-
-              <div class="polaroid">
-                <a href="#" title="Nintendo 64 (año)">
-                  <img height="250" src="/img/consoles/N64.jpg" alt="Nintendo 64" title="Nintendo 64 (año)" />
-                </a>
-              </div>
-
-              <div class="polaroid">
-                <a href="#" title="Nintendo Entertainment System (año)">
-                  <img height="250" src="/img/consoles/nes.jpg" alt="Nintendo Entertainment System" title="Nintendo Entertainment System (año)" />
-                </a>
-              </div>
-
-              <div class="polaroid">
-                <a href="#" title="Sega Master System (año)">
-                  <img height="250" src="/img/consoles/sega.jpg" alt="Sega Master System" title="Sega Master System (año)" />
-                </a>
-              </div>
-
-              <div class="polaroid">
-                <a href="#" title="SNES (año)">
-                  <img height="250" src="/img/consoles/snes.jpg" alt="Super Nintendo Entertainment System" title="SNES (año)" />
-                </a>
-              </div>
-            </div>
     </main>
  
     <!--Resto de la pag, podemos usar los div para armar las cajas-->

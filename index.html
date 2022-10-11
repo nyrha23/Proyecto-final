@@ -18,18 +18,26 @@
 
 <body>
     <header>
-        <h1>Cápsula del tiempo</h1>
+        <img class="logotitulo" src="/img/logo-al17.png" alt=""> <h1>Cápsula del tiempo</h1>
     </header>
-    <nav><!--Cada uno con su link respectivo-->
-        <ul>Inicio</ul>
-        <ul>Los 80s</ul>
-        <ul>Los 90s</ul>
-        <ul>S.21</ul>
-        <ul>Galería</ul>
-        <ul>Nosotros</ul>
-        <ul>Contacto</ul>
-    </nav>
-    <main>
+    <div class="container">
+        <nav class="navbur">
+            <input type="checkbox" name="" id="menuBtn">
+            <label for="menuBtn" class="barIcon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="">Los 80s</a></li>
+                <li><a href="">Los 90s</a></li>
+                <li><a href="">S.21</a></li>
+                <li><a href="/gallery.html">Galería</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+        <main>
         <!--contenido principal, puede ser la presentación de la pág. como un slider-->
         <div>
             <img src="/img/logogde.png" style="width:200px" alt="">
@@ -74,9 +82,9 @@
     <!--Resto de la pag, podemos usar los div para armar las cajas-->
     <footer>
         <div class="autores">
-            <ul><a href="https://github.com/athekat" target="_blank">Cortez, Alan</a></ul>
-            <ul><a href="">David, Emiliano</a></ul>     <!-- Falta agregar enlace-->
-            <ul><a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a></ul>
+            <li><a href="https://github.com/athekat" target="_blank">Cortez, Alan</a></li>
+            <li><a href="https://github.com/Emiliano723">David, Emiliano</a></li>    
+            <li><a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a></li>
         </div>
         <div class="footerlogo">La Cápsula del Tiempo 2022.</div>
         
@@ -86,10 +94,6 @@
             <span class="icorrss"><a href="https://www.twitter.com/LaCapsula" target="_blank"><i class="fa-brands fa-twitter fa-lg"></a></i></span>
                                  
         </div>
-        <!--Nuestros nombres ordenados alfabeticamente linkeados con nuestros github
-        Al centro el nombre de la pag linkeada a si misma (inicio)
-        Logo de IG, podríamos armar un ig y subir las imagenes de la galería, y usarlo tmb para la recepción de mensajes del contacto (si fuese viable, hay que consultarlo)
-        Logo de otras redes sociales que podrían dar a una pag de tipo "error 404"-->
     </footer>
 </body>
 </html>
