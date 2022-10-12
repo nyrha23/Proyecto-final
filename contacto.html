@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/freepik-al17.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <title id="title">Contacto - La cápsula del tiempo</title>
+    <!--link de google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis&family=Indie+Flower&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/82ff3170c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header><h1>Cápsula del tiempo</h1></header>
+    <nav><!--Cada uno con su link respectivo-->
+        <ul><a href="index.html">Inicio</a></ul>
+        <ul>Los 80s</ul>
+        <ul>Los 90s</ul>
+        <ul><a href="siglo-21.html">S21</a></ul>
+        <ul><a href="gallery.html">Galería</a></ul>
+        <ul><a href="nosotros.html">Nosotros</a></ul>
+        <ul><a href="contacto.html">Contacto</a></ul>
+    </nav>
+    <div class="form-div-out">
+        <main>
+            <section><h2>Contáctenos</h2></section>
+        </main>
+            
+        <form class="form" name="form-lacapsula" method="get" action="procesar.php">
+            <div class="form-div-in">
+                <p><label class="form-label">Nombre <input type="text" name="nombre" minlength="3" maxlength="20" required placeholder="Nombre"></label></p>
+                <p><label class="form-label">Apellido <input type="text" name="apellido" minlength="3" maxlength="15" required placeholder="Apellido"></label></p>
+                <p><label class="form-label">Correo <input type="email" name="email" required placeholder="mailito@example.com"></label></p>
+                <p><label class="form-label">Teléfono <input type="tel" name="telefono" pattern="[0-9]{10}" required placeholder="1123456789"></label></p>
+                <p><label class="form-label">Comentario <textarea name="texto" required placeholder="su comentario"></textarea></label></p>
+            </div>
+            <p><button class="button" type="reset" name="Borrar" value="Borrar">Borrar</button>
+                <button class="button" type="submit" name="Enviar" value="Enviar">Enviar</button></p>
+        </form>
+    </div>
+
+    <footer>
+        <div class="autores">
+            <a href="https://github.com/athekat" target="_blank">Cortez, Alan</a>
+            <a href="https://github.com/Emiliano723" target="_blank">David, Emiliano</a>
+            <a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a>
+        </div>
+
+        <div class="footerlogo"><a href="index.html">La Cápsula del Tiempo 2022</a></div>
+        
+        <div class="rrss">
+            <span class="icorrss"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></span>
+            <span class="icorrss"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
+            <span class="icorrss"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-lg"></a></i></span>
+        </div>
+    </footer>
+</body>
+</html>

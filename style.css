@@ -1,35 +1,48 @@
+/*general*/
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #eeeeee;/*podemos definir en las secciones de presentación diferentes fondos*/
+    background-color: #eeeeee;
     color: #212121;
-    /*definir font-family*/
-    font-family: 'Indie Flower', cursive;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
 }
 header{
     display: flex;  
     justify-content: center;
     background-color: #D1C4E9;
-    /*definir font-family*/
     font-family: 'Bungee Spice', cursive;
-
+    font-size: 1rem;
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 nav{
     display: flex;
     justify-content: center;
-    background-color: #DCEDC8;
- 
+    background-color: #D1C4E9;
+    font-size: 1rem;
 }
-
 main {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-family: 'Indie Flower', cursive;
+    font-style: semibold;
+    font-size: 1rem;
+    position: top;
+    margin: 0.1% 2% 0.1% 5%;
+    padding: 0.1rem;
+}
+h1, h2, h3 {
+    font-family: 'Indie Flower', cursive;
 }
 
+/*index*/
 .vineta {
     background-color: #fff;
     border-radius: 1px 50px 1px 50px;
@@ -37,133 +50,56 @@ main {
     margin: 5%;
     padding: 2%;
 }
-
-.los80 {
+.nota1 {
     display: flex;
     background-color: RGB(117,122,141);
     padding: 2%;
     margin: 0% 2%;
 }
-
-.los90 {
+.nota2 {
     display: flex;
     background-color: RGB(141,117,117);
     padding: 2%;
     margin: 0% 2%;
-    
 }
-.s21 {
+.nota3 {
     display: flex;
     background-color: RGB(117,141,119);
     padding: 2%;
     margin: 0% 2%;
 }
-
-.los80:hover {
+.nota1:hover, .nota2:hover, .nota3:hover {
     margin: 0;
     padding: 2% 4%;
     transition: 300ms;
 }
-
-.los90:hover {
-    margin: 0;
-    padding: 2% 4%;
-    transition: 300ms;
-}
-
-.s21:hover {
-    margin: 0;
-    padding: 2% 4%;
-    transition: 300ms;
-}
-
-.los80:not(hover)  {
+.nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
     margin: 0% 2%;
     transition: 300ms;
 }
-
-.los90:not(hover)  {
-    margin: 0% 2%;
-    transition: 300ms;
-}
-
-.s21:not(hover)  {
-    margin: 0% 2%;
-    transition: 300ms;
-}
-
 
 .consola  {
     padding: 1%;
     width: 250px;
     float: left;
-  }
-
+}
 
 .leermas {
     text-decoration: none;
     color: white;
     text-align: right;
 }
-
 .leermas a:hover {
     color: orange;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: #1D1833;
-    color: #fff;
-    padding: 1% 5%;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: orange;
-}
-
-footer ul {
-    margin: 0;
-}
-
-.autores {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    width: 33%;
-}
-
-.rrss {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-
-}
-
-.footerlogo {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-end;
-}
-
-.icorrss {
-    margin: 0 5px;
-}
-
+/*galeria*/
 .gallery {
+    background: rgb(238, 232, 246);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .polaroid a {
     background: #ffffff;
     display: inline-block;
@@ -176,67 +112,130 @@ footer ul {
     z-index: 0;
     position: relative;
     opacity: 0.7;
-  }
-  .polaroid a:after {
+}
+.polaroid a:after {
     color: #333;
     font-size: 25px;
     content: attr(title);
     position: relative;
     top: 15px;
     text-align: center;
-
-  }
-  .polaroid img {
+}
+.polaroid img {
+    background-color: #F2F4F4;
     display: block;
     width: 250px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .polaroid a:hover {
+}
+.polaroid a:hover {
     opacity: 1;
-  }
+}
 
+/*contacto*/
+.form-div-out{
+    background-image: url("img/freepng-joysticks.png");
+    background-repeat: no-repeat;
+    background-position: right 1px bottom 1px;
+    background-size: 50%;
+    width: 99vw;
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+.form{
+    background-color: white;
+    border: 1px #ddd solid;
+    border-radius: 20px;
+    box-shadow: #969696 5px 5px 10px;
+    width: 40vw;
+    height: auto;
+    margin: 1rem 3rem;
+    padding: 1.5rem;
+}
+.form-div-in{
+    background-color: lavender;
+    border: 1px lavender solid;
+    border-radius: 12px;
+    width: 36vw;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.button{
+    background-color: #6451ad;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    border: 2px #6451ad solid;
+    border-radius: 20px;
+    margin: 0.2rem 5rem;
+    padding: 0.5rem;
+}
+input, textarea{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+}
+.form-label{
+    display: block;
+    padding: 5px;
+}
 
+/*general*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1D1833;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1% 5%;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: orange;
+}
+.footerlogo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+.autores {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 33%;
+}
+.rrss {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.icorrss {
+    margin: 0 5px;
+}
+footer ul {
+    margin: 0;
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .consola  {         /*Ocultar imágenes de consolas en mobile*/
         display:none;
-    
-      }
-    
-    .los80:not(hover)  {      /*Márgenes al 100% en mobile*/
-        margin: 0%;
-        transition: 300ms;
     }
-    
-    .los90:not(hover)  {
-        margin: 0%;
-        transition: 300ms;
-    }
-    
-    .s21:not(hover)  {
-        margin: 0%;
-        transition: 300ms;
-    }
-
-    .los80:hover {
+    .nota1:hover, .nota2:hover, .nota3:hover {
         margin: 0;
         padding: 2%;
-
     }
-    
-    .los90:hover {
-        margin: 0;
-        padding: 2%;
-
-    }
-    
-    .s21:hover {
-        margin: 0;
-        padding: 2%;
-
+    .nota1:not(hover), .nota2:not(hover), .nota3:not(hover)  {      /*Márgenes al 100% en mobile*/
+        margin: 0%;
+        transition: 300ms;
     }
 
     nav{                        /*Encolumnar el nav en mobile */
@@ -246,8 +245,5 @@ footer ul {
         align-items: center;
         background-color: #DCEDC8;
         line-height: 0%;
-   
     }
-
-
 }
