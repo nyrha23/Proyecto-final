@@ -295,3 +295,45 @@ footer a:hover {
 footer ul {
     margin: 0;
 }
+
+/*corte de tablet*/
+@media only screen and (max-width: 768px) {
+    .nota1:hover, .nota2:hover, .nota3:hover {
+        margin: 0;
+        padding: 2%;
+    }
+    .nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
+        margin: 0%;
+        transition: 300ms;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #DCEDC8;
+        line-height: 0%;
+    }
+}
+/*corte de mobile*/
+@media only screen and (max-width: 576px) {
+    .consola {
+        display:none;
+    }
+    .nota1:hover, .nota2:hover, .nota3:hover {
+        margin: 0;
+        padding: 2%;
+    }
+    .nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
+        margin: 0%;
+        transition: 300ms;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #DCEDC8;
+        line-height: 0%;
+    }
+}
