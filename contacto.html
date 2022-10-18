@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <nav class="nav-main">
-            <div >
+            <div>
                 <h1><a href="index.html">La cápsula del tiempo</a></h1>
             </div>
             <ul class="nav-menu">
@@ -36,26 +36,26 @@
         <!--formulario-->
         <div class="form-div">
             <main>
-                <section><h2>Contáctenos</h2></section>
+                <header>
+                    <section><h2>Contáctenos</h2></section>
+                </header>
+                <br>
+                <div class="form-div-out">
+                    <form class="form" name="form-lacapsula" method="get" action="procesar.php">
+                    <div class="form-div-in">
+                        <p><label class="form-label">Nombre <input type="text" name="nombre" minlength="3" maxlength="20" required placeholder="Nombre"></label></p>
+                        <p><label class="form-label">Apellido <input type="text" name="apellido" minlength="3" maxlength="15" required placeholder="Apellido"></label></p>
+                        <p><label class="form-label">Correo <input type="email" name="email" required placeholder="mailito@example.com"></label></p>
+                        <p><label class="form-label">Teléfono <input type="tel" name="telefono" pattern="[0-9]{10}" required placeholder="1123456789"></label></p>
+                        <p><label class="form-label">Comentario <textarea name="texto" required placeholder="su comentario"></textarea></label></p>
+                    </div>
+                    <div class="form-btn">
+                        <p><button class="btn-form" type="reset" name="Borrar" value="Borrar">Borrar <i class="fa-solid fa-xmark"></i></button>
+                            <button class="btn-form" type="submit" name="Enviar" value="Enviar">Enviar <i class="fa-solid fa-check"></i></button></p>
+                    </div>
+                    </form>
+                </div>
             </main>
-            <br>
-
-            <div class="form-div-out">
-                <form class="form" name="form-lacapsula" method="get" action="procesar.php">
-                <div class="form-div-in">
-                    <p><label class="form-label">Nombre <input type="text" name="nombre" minlength="3" maxlength="20" required placeholder="Nombre"></label></p>
-                    <p><label class="form-label">Apellido <input type="text" name="apellido" minlength="3" maxlength="15" required placeholder="Apellido"></label></p>
-                    <p><label class="form-label">Correo <input type="email" name="email" required placeholder="mailito@example.com"></label></p>
-                    <p><label class="form-label">Teléfono <input type="tel" name="telefono" pattern="[0-9]{10}" required placeholder="1123456789"></label></p>
-                    <p><label class="form-label">Comentario <textarea name="texto" required placeholder="su comentario"></textarea></label></p>
-                </div>
-                <div class="form-btn">
-                    <p><button class="btn-form" type="reset" name="Borrar" value="Borrar">Borrar <i class="fa-solid fa-xmark"></i></button>
-                        <button class="btn-form" type="submit" name="Enviar" value="Enviar">Enviar <i class="fa-solid fa-check"></i></button></p>
-                </div>
-                </form>
-            </div>
-            
         </div>
         <br>
     </div>
