@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EEE;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23d1c4e9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    font-family: 'Dosis', sans-serif;
+    font-size: 1rem;
+    color: #212121;
+    height: 100%;
+}
+h1{
+    font-family: 'Bungee Spice', cursive;
+}
+h2, h3{
+    font-family: 'Indie Flower', cursive;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+
+/*nav*/
+.nav-main{
+    background-color: #EDE7F6;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul li a{
+    padding: 2%;
+    color: #212121;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #1D1833;
+}
+hr{
+    margin-bottom: 1%;
+}
+
+/*nota principal, quizás hacia "nosotros"*/
+.showcase{
+    width: 100%;
+    height: 550px;
+    background: url("img/consoles/pngwing-NintendoSwitch1.png") no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.showcase-div, .showcase-div p{
+    color: #fff;
+    margin: 1% 15%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.showcase-div h2{
+    margin: 1%;
+}
+.showcase-btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #FFF;
+    margin: 1% 0;
+    padding: 1% 2%;
+    font-weight: bold;
+    color: #FFF;
+}
+.btn:hover{
+    background-color: orange;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #212121;
+    margin: 1% 0;
+    padding: 1% 2%;
+    font-weight: bold;
+    color: #212121;
+}
+.btn:hover{
+    background-color: orange;
+}
+
+/*otras notas: los 80, los 90, siglo 20*/
+.nota1, .nota2, .nota3 {
+    display: flex;
+    background-color: #F4F6F6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    padding: 2%;
+    margin: 0% 2%;
+}
+.nota1:hover, .nota2:hover, .nota3:hover {
+    margin: 0;
+    padding: 2% 4%;
+    transition: 300ms;
+}
+.nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
+    margin: 0% 2%;
+    transition: 300ms;
+}
+
+.consola  {
+    padding: 1%;
+    width: 250px;
+    float: left;
+}
+
+.leermas {
+    text-decoration: none;
+    color: white;
+    text-align: right;
+}
+.leermas a:hover {
+    color: orange;
+}
+/*los80*/
+.iframe-los80, iframe-los90{
+    display: flex;
+    justify-content: center;
+}
+
+/*galeria*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.polaroid a {
+    background: #FFF;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+    opacity: 0.7;
+}
+.polaroid a:after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+.polaroid img {
+    background-color: #F2F4F4;
+    display: block;
+    width: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.polaroid a:hover {
+    opacity: 1;
+}
+
+/*contacto*/
+.form-div{
+    display: flex;
+    flex-direction: column;
+    width: 88vw;
+    height: 100hw;
+    margin: 2%;
+    padding: 2%;
+    background: url("img/freepng-joysticks1.png") no-repeat right;
+}
+.form-div-out{
+    background-color: #FFF;
+    border: 1px #DDD solid;
+    border-radius: 2px;
+    box-shadow: #969696 5px 5px 10px;
+    width: 50%;
+    height: auto;
+    margin: 2% ;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.form-div-in{
+    background-color: lavender;
+    border: 1px lavender solid;
+    border-radius: 2px;
+    height: auto;
+    margin: 2% ;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+}
+.form-label{
+    display: block;
+    margin: 1%;
+    padding: 2%;
+}
+.form-btn{
+    text-align: center;
+    margin: 2%;
+    padding: 1%;
+}
+.btn-form{
+    background-color: #6451AD;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px #6451AD solid;
+    border-radius: 30px;
+    margin: 1% 0;
+    padding: 2%;
+}
+.btn-form:hover{
+    background-color: orange;
+    border: #212121 1px solid;
+    color: #212121;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1D1833;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1% 5%;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: orange;
+}
+.footerlogo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+.autores {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 33%;
+}
+.rrss {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.icorrss {
+    margin: 0 5px;
+}
+footer ul {
+    margin: 0;
+}
