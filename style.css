@@ -108,7 +108,7 @@ hr{
     background-color: orange;
 }
 
-/*otras notas: los 80, los 90, siglo 20*/
+/*otras notas: nota1, nota2, nota3*/
 .nota1, .nota2, .nota3 {
     display: flex;
     background-color: #F4F6F6;
@@ -140,8 +140,8 @@ hr{
 .leermas a:hover {
     color: orange;
 }
-/*los80*/
-.iframe-los80, iframe-los90{
+/*notas*/
+.iframe-nota1, .iframe-nota2{
     display: flex;
     justify-content: center;
 }
