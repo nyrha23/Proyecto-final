@@ -83,7 +83,7 @@ hr{
 .showcase-div h2{
     margin: 1%;
 }
-.showcase-btn{
+.btn-blanco{
     cursor: pointer;
     display: inline-block;
     border: 1px solid #FFF;
@@ -92,7 +92,7 @@ hr{
     font-weight: bold;
     color: #FFF;
 }
-.showcase-btn:hover{
+.btn-blanco:hover{
     background-color: orange;
 }
 
