@@ -1,110 +1,242 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+}
+:root{
+    --color-bg: #eee;
+    --color-bg-alt: #ECEFF1;
+    --color-txt: #212121;
+    --color-txt-alt: #FFF;
+    --color-fst: #EDE7F6;
+    --color-snd: #1D1833;
+    --color-trd: #ffa500;
+    --color-shad: #969696;
+    --font-family-logo: 'Bungee Spice', cursive;
+    --font-family-fst: 'Dosis', sans-serif;
+    --font-family-alt: 'Indie Flower', cursive;
+    --font-bold: 700;
+}
+/*corte de tablet*/
+@media only screen and (max-width: 768px) {
+}
+/*corte de mobile*/
+@media only screen and (max-width: 360px) {
+}
+
+html{
+    font-size: 1rem;
 }
 body{
-    background-color: #EEE;
+    background-color: var(--color-bg);
     background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23d1c4e9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-    font-family: 'Dosis', sans-serif;
-    font-size: 1rem;
-    color: #212121;
+    font-family: var(--font-family-fst);
+    color: var(--color-txt);
     height: 100%;
+    margin: 0;
+}
+main{
+    margin: 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: column;
 }
 h1{
-    font-family: 'Bungee Spice', cursive;
+    font-family: var(--font-family-logo);
 }
 h2, h3, h4{
-    font-family: 'Indie Flower', cursive;
+    font-family: var(--font-family-alt);
+    font-weight: var(--font-bold);
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
-ul{
-    list-style: none;
+p{
+    font-family: var(--font-family-fst);
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 a{
     text-decoration: none;
+    margin: 0.1rem;
 }
-.container{
-    width: 90%;
-    margin: auto;
-    height: 100%;
+aside{
+    font-size: 0.8rem;
+    margin: 0.1rem 0 0 0;
+    width: 100%;
+    display: flex;
+}
+aside p a{
+    color: var(--color-txt);
+    font-weight: var(--font-bold);
+}
+aside p a:hover{
+    border-bottom: var(--color-txt);
 }
 
-/*nav*/
+/*botones de leer más o ver o continuar*/
+.btn{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-bg-alt);
+    font-weight: var(--font-bold);
+    color: var(--color-txt);
+    border: 1px solid var(--color-shad);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn:hover{
+    background-color: var(--color-trd);
+}
+.btn-blanco{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-txt);
+    font-weight: var(--font-bold);
+    color: var(--color-txt-alt);
+    border: 1px solid var(--color-txt-alt);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-blanco:hover{
+    background-color: var(--color-trd);
+}
+.btn-nav{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-fst);
+    font-weight: var(--font-bold);
+    color: var(--color-txt);
+    border: 1px solid var(--color-shad);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-nav:hover{
+    background-color: var(--color-trd);
+}
+
+/*navegacion*/
+#encabezado{
+    background-color: var(--color-fst);
+    color: var(--color-txt);
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 5rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    max-height: 4rem;
+    box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
+}
+.logo{
+    margin: 0.5rem;
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+}
 .nav-main{
-    background-color: #EDE7F6;
-    font-size: 18px;
+    margin: 0.5rem;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding: 20px 0;
+    padding: 0.5rem;
 }
 .nav-main ul{
+    margin: 0.5rem;
     display: flex;
-}
-.nav-main ul.nav-menu{
-    flex: 1;
-    margin-left: 20px;
+    list-style: none;
+    font-weight: 700;
 }
 .nav-main ul li{
-    padding: 10px;
+    padding: 0.5rem;
 }
 .nav-main ul li a{
-    padding: 2%;
-    color: #212121;
+    color: var(--color-txt);
 }
 .nav-main ul li a:hover{
-    border-bottom: 2px solid #1D1833;
-}
-hr{
-    margin-bottom: 1%;
+    border-bottom: 2px solid var(--color-txt);
 }
 
-/*nota principal*/
-.showcase{
+/*footer*/
+footer{
+    background-color: var(--color-snd);
+    color: var(--color-txt-alt);
+    bottom: 0;
     width: 100%;
-    height: 550px;
-    background: url("img/consoles/pngwing-NintendoSwitch1.png") no-repeat center center/cover;
-    padding-bottom: 50px;
+    margin: 0.5rem 0 0 0;
+    padding: 0.5rem 5rem;
+    max-height: 8rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: center;
+    justify-content: center;
 }
-.showcase-div, .showcase-div p{
-    color: #fff;
-    margin: 1% 15%;
-    padding-bottom: 50px;
+footer a {
+    color: var(--color-txt-alt);
+}
+footer a:hover {
+    color: var(--color-trd);
+}
+.autores {
+    width: 33%;
+    margin: 0.5rem;
     display: flex;
+    justify-content: start;
     flex-direction: column;
+}
+.footerlogo {
+    width: 33%;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+.rrss {
+    width: 33%;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: end;
     align-items: center;
-    justify-content: flex-end;
 }
-.showcase-div h2{
-    margin: 1%;
-}
-.btn-blanco{
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid #FFF;
-    margin: 1% 0;
-    padding: 1% 2%;
-    font-weight: bold;
-    color: #FFF;
-}
-.btn-blanco:hover{
-    background-color: orange;
+.icorrss {
+    margin: 0.5rem;
 }
 
-/*secciones: nota1, nota2, nota3*/
-.nota1, .nota2, .nota3 {
+/*index*/
+.showcase{
+    width: auto;
+    margin: 1rem;
+    background-image: url('img/consoles/pngwing-NintendoSwitch1.png');
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    background-color: #F4F6F6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    padding: 2%;
-    margin: 0% 2%;
+    justify-content: center;
+    align-items: center;
+    height: 28rem;
+}
+.showcase-video iframe{
+    border: #000 5px solid;
+    width: 38rem;
+    height: 22rem;
+    display: flex;
+}
+.stn-nota{
+    margin: 0.5rem;
+    display: flex;
+}
+.nota1, .nota2, .nota3 {
+    padding: 0.5rem;
+    margin: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 .nota1:hover, .nota2:hover, .nota3:hover {
+    background-color: var(--color-txt-alt);
     margin: 0;
     padding: 2% 4%;
     transition: 300ms;
@@ -114,27 +246,11 @@ hr{
     transition: 300ms;
 }
 .consola  {
-    padding: 1%;
-    width: 250px;
+    background-color: var(--color-bg-alt);
+    box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
+    margin: 0.5rem;
+    width: 20%;
     float: left;
-}
-.btn{
-    cursor: pointer;
-    display: inline-block;
-    border: 1px solid #212121;
-    margin: 1% 0;
-    padding: 1% 2%;
-    font-weight: bold;
-    color: #212121;
-}
-.btn:hover{
-    background-color: orange;
-}
-
-/*pag. nota1, nota2*/
-.iframe-nota1, .iframe-nota2{
-    display: flex;
-    justify-content: center;
 }
 
 /*galeria*/
@@ -143,38 +259,50 @@ hr{
     justify-content: center;
     flex-wrap: wrap;
 }
+.polaroid {
+    background-color: var(--color-txt-alt);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem 1rem 1rem;
+}
+.polaroid img {
+    background-color: var(--color-bg-alt);
+    border-radius: 0.5rem;
+    height: 18rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.polaroid:hover {
+    transform: rotate(-10deg);
+}
+/*
 .polaroid a {
-    background: #FFF;
+    background: var(--color-txt-alt);
     display: inline-block;
     margin: 55px 75px 30px;
     padding: 15px 15px 30px;
     text-align: center;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(var(--color-shad), 0.3);
     transition: all .20s linear;
     z-index: 0;
     position: relative;
     opacity: 0.7;
 }
 .polaroid a:after {
-    color: #333;
+    color: var(--color-txt);
     font-size: 25px;
     content: attr(title);
     position: relative;
     top: 15px;
     text-align: center;
 }
-.polaroid img {
-    background-color: #F2F4F4;
-    display: block;
-    width: 250px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.polaroid a:hover {
+
+.polaroid:hover {
     opacity: 1;
-}
+}*/
 
 /*contacto*/
 .form-div{
@@ -184,13 +312,14 @@ hr{
     height: 100hw;
     margin: 2%;
     padding: 2%;
-    background: url("img/freepng-joysticks1.png") no-repeat right;
+    background: url("img/freepng-joysticks.png") no-repeat right;
 }
 .form-div-out{
-    background-color: #FFF;
+    background-color: var(--color-txt-alt);
     border: 1px #DDD solid;
     border-radius: 2px;
-    box-shadow: #969696 5px 5px 10px;
+    box-shadow: var(--color-shad) 0 5px 10px;
+    
     width: 50%;
     height: auto;
     margin: 2% ;
@@ -203,15 +332,15 @@ hr{
     border: 1px lavender solid;
     border-radius: 2px;
     height: auto;
-    margin: 2% ;
-    padding: 2%;
+    margin: 0.5rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
 }
 input, textarea{
-    font-family: 'Indie Flower', cursive;
+    font-family: var(--font-family-alt);
     font-size: 1rem;
-    border: 1px solid #DDD;
+    border: 1px solid lavender;
     border-radius: 10px;
 }
 .form-label{
@@ -225,106 +354,27 @@ input, textarea{
     padding: 1%;
 }
 .btn-form{
-    background-color: #6451AD;
-    font-family: 'Indie Flower', cursive;
+    background-color: var(--color-snd);
+    font-family: var(--font-family-alt);
     font-size: 1rem;
     font-weight: bold;
-    color: #FFF;
+    color: var(--color-txt-alt);
     cursor: pointer;
     display: inline-block;
-    border: 2px #6451AD solid;
+    border: 2px var(--color-snd) solid;
     border-radius: 30px;
-    margin: 1% 0;
-    padding: 2%;
+    margin: 0.5rem 0;
+    padding: 1rem;
 }
 .btn-form:hover{
-    background-color: orange;
-    border: #212121 1px solid;
-    color: #212121;
+    background-color: var(--color-trd);
+    border: var(--color-txt) 1px solid;
+    color: var(--color-txt);
 }
 
-/*footer*/
-footer{
+/*pag. nota1, nota2*/
+.iframe-nota1, .iframe-nota2{
     display: flex;
     justify-content: center;
-    background-color: #1D1833;
-    color: #fff;
-    font-size: 1rem;
-    padding: 1% 5%;
-    bottom: 0;
-    width: 100%;
-}
-footer a {
-    color: white;
-    text-decoration: none;
-}
-footer a:hover {
-    color: orange;
-}
-.footerlogo {
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-end;
-}
-.autores {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    width: 33%;
-}
-.rrss {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-.icorrss {
-    margin: 0 5px;
-}
-footer ul {
-    margin: 0;
 }
 
-/*corte de tablet*/
-@media only screen and (max-width: 768px) {
-    .nota1:hover, .nota2:hover, .nota3:hover {
-        margin: 0;
-        padding: 2%;
-    }
-    .nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
-        margin: 0%;
-        transition: 300ms;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #DCEDC8;
-        line-height: 0%;
-    }
-}
-/*corte de mobile*/
-@media only screen and (max-width: 576px) {
-    .consola {
-        display:none;
-    }
-    .nota1:hover, .nota2:hover, .nota3:hover {
-        margin: 0;
-        padding: 2%;
-    }
-    .nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
-        margin: 0%;
-        transition: 300ms;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #DCEDC8;
-        line-height: 0%;
-    }
-}

@@ -18,96 +18,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <nav class="nav-main">
-            <div>
-                <h1><a href="index.html">La cápsula del tiempo</a></h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="siglo-20.html">Siglo 20</a></li>
-                <li><a href="siglo-21.html">Siglo 21</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <ul class="nav-menu-right">
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
-        </nav>
-        <hr><br>
-    <!--galeria-->
+  <!--header-->
+  <header id="encabezado">
+    <div class="logo">
+        <h1><a href="index.html">La cápsula del tiempo</a></h1>
+    </div>
+    <!--nav-->
+    <nav class="nav-main">
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="siglo-20.html">Siglo 20</a></li>
+        <li><a href="siglo-21.html">Siglo 21</a></li>
+        <li><a href="gallery.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <button class="btn-nav" id="menu-burger"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+  <!--main-->
+  <main>
     <header>
-      <section><h2>Contáctenos</h2></section>
+      <h2>Galería</h2>
     </header>
-    <br>
-    <main>
-      <div class="gallery">
-
-        <div class="polaroid">
-          <a href="#" title="NeoGeo (año)">
-            <img height="250" src="/img/consoles/pngwing-NeoGeo.png" alt="NeoGeo" title="NeoGeo (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Atari 2600 (año)">
-            <img height="250" src="/img/consoles/freepng-Atari2600.png" alt="Atari 2600" title="Atari 2600 (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Game Boy Advance (año)">
-            <img height="250" src="/img/consoles/freepng-GameBoyAdvance.png" alt="Game Boy Advance" title="Game Boy Advance (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="MAME (año)">
-            <img height="250" src="/img/consoles/pngwing-MAME.png" alt="Mame" title="Mame (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Nintendo 64 (año)">
-            <img height="250" src="/img/consoles/pngwing-Nintendo64.png" alt="Nintendo 64" title="Nintendo 64 (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Nintendo Entertainment System (año)">
-            <img height="250" src="/img/consoles/pngwing-NintendoES.png" alt="Nintendo Entertainment System" title="Nintendo Entertainment System (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Sega Master System (año)">
-            <img height="250" src="/img/consoles/pngwing-SegaMS2.png" alt="Sega Master System" title="Sega Master System (año)" />
-          </a>
-        </div>
-      
-        <div class="polaroid">
-          <a href="#" title="Super Nintendo Entertainment System (año)">
-            <img height="250" src="/img/consoles/pngwing-SuperNintendoES.png" alt="Super Nintendo Entertainment System" title="Super Nintendo Entertainment System (año)" />
-          </a>
-        </div>
+    <div class="gallery">
+      <div class="polaroid">
+        <img src="/img/consoles/freepng-Atari2600.png" alt="" title="Atari 2600 (1977)"/>
+        <h3>Atari (1977)</h3>
       </div>
-    </main>
-  </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-pc-antigua.png" alt="" title="PC domestica (90)">
+        <h3>PC doméstica ('80/ '90)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-SegaMS2.png" alt="" title="Sega Master System II (1985)">
+        <h3>Sega MS II (1985)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-NeoGeo.png" alt="" title="NeoGeo (1990)">
+        <h3>NeoGeo (1990)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-Nintendo64.png" alt="" title="Nintendo 64 (1996)">
+        <h3>Nintendo 64 (1996)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-MAME.png" alt="" title="Mame (1997)">
+        <h3>MAME (1997)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/freepng-GameBoyAdvance.png" alt="" title="Game Boy Advance (2001)">
+        <h3>Game Boy Advance (2001)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-smartphone.png" alt="" title="Smartphone">
+        <h3>Smartphone (actual)</h3>
+      </div>
+      <div class="polaroid">
+        <img src="/img/consoles/pngwing-pc-gamer.png" alt="" title="PC Gamer (actual)">
+        <h3>PC Gamer (actual)</h3>
+      </div>
+    </div>
+  </main>
+  <aside><p>*Las imágenes son utilizadas sin ánimo de lucro a modo ilustrativo. Se agradece el aporte de las comunidades de <a href="https://www.freepik.es/" target="_blank">Freepik</a>, <a href="https://www.freepng.es/" target="_blank">Freepng</a>y <a href="https://www.pngwing.com/" target="_blank">Pngwing</a>.</p></aside>
+  <!--footer-->
   <footer>
     <div class="autores">
-        <a href="https://github.com/athekat" target="_blank">Cortez, Alan</a>
-        <a href="https://github.com/Emiliano723" target="_blank">David, Emiliano</a>
-        <a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a>
+      <a href="https://github.com/athekat" target="_blank">Cortez, Alan</a>
+      <a href="https://github.com/Emiliano723" target="_blank">David, Emiliano</a>
+      <a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a>
     </div>
-
     <div class="footerlogo"><a href="index.html">La Cápsula del Tiempo 2022</a></div>
-    
     <div class="rrss">
-        <span class="icorrss"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></span>
-        <span class="icorrss"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
-        <span class="icorrss"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a></span>
+      <span class="icorrss"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></span>
+      <span class="icorrss"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
+      <span class="icorrss"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a></span>
     </div>
-</footer>
+  </footer>
 </body>
 </html>

@@ -16,75 +16,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis&family=Indie+Flower&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+</head>
 <body>
-    <div class="container">
+    <!--header-->
+    <header id="encabezado">
+        <div class="logo">
+            <h1><a href="index.html">La cápsula del tiempo</a></h1>
+        </div>
         <!--nav-->
         <nav class="nav-main">
-            <div>
-                <h1><a href="index.html">La cápsula del tiempo</a></h1>
-            </div>
             <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="siglo-20.html">Siglo 20</a></li>
                 <li><a href="siglo-21.html">Siglo 21</a></li>
                 <li><a href="gallery.html">Galería</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <ul class="nav-menu-right">
-                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-            </ul>
+            <button class="btn-nav" id="menu-burger"><i class="fa-solid fa-bars"></i></button>
         </nav>
-        <hr><br>
-        <!--nota principal, quizás hacia "siglo 20" o "nosotros"-->
+    </header>
+    <!--main-->
+    <main>
         <header class="showcase">
-            <div class="showcase-div">
-                <h2>Nota principal</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis facere quia, tempore incidunt nihil provident voluptas cupiditate quibusdam. Aliquid molestiae sit dolores delectus distinctio. Maiores saepe odio quia sit repellat.</p>
-                <a href="#" class="btn-blanco">Leer más<i class="fas fa-angle-double-right"></i></a>
+            <div class="showcase-video">
+                <iframe src="https://www.youtube.com/embed/j1XYbI6JcXI" title="La historia de los videojuegos" allowfullscreen></iframe>
             </div>
         </header>
-        <br>
-        <!--secciones: nota1, nota2, nota3-->
-        <main>
-            <section class="sec-consolas">
-                <div class="nota1">
-                    <img src="/img/consoles/freepng-Atari2600.png" class="consola" alt="">
-                    <div>
-                        <h3>Atari 2600</h3>
-                        <p>Es una videoconsola lanzada al mercado en 1977 bajo el nombre de Atari VCS (Video Computer System), convirtiéndose en el primer sistema de videojuegos en tener gran éxito, e hizo popular los cartuchos intercambiables. Esta consola fue un gran éxito y logró que durante los años 1980 «Atari» fuese sinónimo de videojuegos. Se vendía acompañada de dos joysticks, dos controles tipo paddle y el juego Combat desde 1977 hasta 1983, después, se comercializó con dos controles, y con o sin cartucho de juegos dependiendo del paquete.
-                        </p>
-                        <a href="nota1.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
-                    </div>
+
+        <section class="stn-nota">
+            <div class="nota1">
+                <img src="/img/consoles/freepng-Atari2600.png" class="consola" alt="">
+                <div>
+                    <h2>Atari 2600</h2>
+                    <p>Es una videoconsola lanzada al mercado en 1977 bajo el nombre de Atari VCS (Video Computer System), convirtiéndose en el primer sistema de videojuegos en tener gran éxito, e hizo popular los cartuchos intercambiables. Esta consola fue un gran éxito y logró que durante los años 1980 «Atari» fuese sinónimo de videojuegos. Se vendía acompañada de dos joysticks, dos controles tipo paddle y el juego Combat desde 1977 hasta 1983, después, se comercializó con dos controles, y con o sin cartucho de juegos dependiendo del paquete.
+                    </p>
+                    <a href="nota1.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
                 </div>
-            </section>
-            <br>
-            <section class="sec-consolas">
-                <div class="nota2">
-                    <img src="/img/consoles/pngwing-SonyPS3.png" class="consola" alt="">
-                    <div>
-                        <h3>PlayStation 3</h3>
-                        <p>Oficialmente abreviada como PS3, desde su lanzamiento en 11 de noviembre de 2006, se ha convertido en la tercera videoconsola del modelo PlayStation de Sony Computer Entertainment. Es la quinta y última consola de Sony en ser diseñada por Ken Kutaragi y forma parte de las videoconsolas de séptima generación y sus competidores fueron la Xbox 360 de Microsoft y la Wii de Nintendo.
-                        </p>
-                        <a href="nota2.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
-                    </div>
+            </div>
+        </section>
+        
+        <section class="stn-nota">
+            <div class="nota2">
+                <img src="/img/consoles/pngwing-NintendoES.png" class="consola" alt="">
+                <div>
+                    <h2>Nintendo NES</h2>
+                    <p>Está considerada como la videoconsola más exitosa de su época y contribuyó a revitalizar de forma significativa la industria estadounidense de los videojuegos, la cual había sufrido previamente una debacle financiera que ocasionó que varias empresas especializadas quebraran, además de establecer el nivel estándar para consolas posteriores en aspectos primordiales como el diseño de cada juegon y planteamiento de mandos. Asimismo, a partir de esta consola Nintendo estableció un modelo de negocios estandarizado en la era contemporánea y referente a la licencia de desarrollo de software a terceros.
+                    </p>
+                    <a href="nota2.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
                 </div>
-            </section>
-            <br>
-            <section class="sec-videojuegos">
-                <div class="nota3">
-                    <img src="/img/consoles/pngwing-Wii.png" class="consola" alt="">
-                    <div>
-                        <h3>Siglo XXI</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius doloribus nobis neque, qui similique? Tempore ab non nesciunt unde quae, cumque voluptatibus ducimus tempora vel, repellendus maiores odio ipsa quod atque, quam consectetur amet. Provident atque quo nostrum aspernatur repudiandae temporibus sapiente natus voluptatem? Ssit amet consectetur adipisicing elit. Saepe eius doloribus nobis neque, qui similique?</p>
-                        <a href="siglo-20.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
-                    </div>
+            </div>
+        </section>
+        
+        <section class="stn-nota">
+            <div class="nota3">
+                <img src="/img/consoles/pngwing-Wii.png" class="consola" alt="">
+                <div>
+                    <h2>Siglo XXI</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius doloribus nobis neque, qui similique? Tempore ab non nesciunt unde quae, cumque voluptatibus ducimus tempora vel, repellendus maiores odio ipsa quod atque, quam consectetur amet. Provident atque quo nostrum aspernatur repudiandae temporibus sapiente natus voluptatem? Ssit amet consectetur adipisicing elit. Saepe eius doloribus nobis neque, qui similique?</p>
+                    <a href="siglo-20.html" class="btn">Leer más<i class="fas fa-angle-double-right"></i></a>
                 </div>
-            </section>
-            <br>
-        </main>
-    </div>
+            </div>
+        </section>
+        <aside></aside>
+    </main>
     <!--footer-->
     <footer>
         <div class="autores">
@@ -92,9 +86,9 @@
             <a href="https://github.com/Emiliano723" target="_blank">David, Emiliano</a>
             <a href="https://github.com/TrinityPasi" target="_blank">Pasi, Trinidad</a>
         </div>
-
-        <div class="footerlogo"><a href="index.html">La Cápsula del Tiempo 2022</a></div>
-        
+        <div class="footerlogo">
+            <a href="index.html">La Cápsula del Tiempo 2022</a>
+        </div>
         <div class="rrss">
             <span class="icorrss"><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></span>
             <span class="icorrss"><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></span>
