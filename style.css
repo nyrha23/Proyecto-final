@@ -1,15 +1,3 @@
-body, header, main, aside, footer{
-    border: red 3px solid;
-}
-nav, section, article{
-    border: blue solid 3px;
-}
-ul, span, h2, h3, h4, p, a, img{
-    border: lightseagreen 3px solid;
-}
-div{
-    border: limegreen solid 3px;
-}
 *{
     box-sizing: border-box;
 }
@@ -27,13 +15,6 @@ div{
     --font-family-alt: 'Indie Flower', cursive;
     --font-bold: 700;
 }
-/*corte de tablet*/
-@media only screen and (max-width: 768px) {
-}
-/*corte de mobile*/
-@media only screen and (max-width: 360px) {
-}
-
 html{
     font-size: 1rem;
 }
@@ -52,6 +33,7 @@ main{
 }
 h1{
     font-family: var(--font-family-logo);
+    font-size: 1rem;
 }
 h2, h3, h4{
     font-family: var(--font-family-alt);
@@ -287,80 +269,89 @@ footer a:hover {
     margin-right: auto;
 }
 .polaroid:hover {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
 }
 
 /*contacto*/
-.form-div{
+.titulador{
+    top: 0;
     display: flex;
-    flex-direction: column;
-    width: 88vw;
-    height: 100hw;
-    margin: 2%;
-    padding: 2%;
-    background: url("img/freepng-joysticks.png") no-repeat right;
+    flex-direction: center;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
 }
-.form-div-out{
-    background-color: var(--color-txt-alt);
-    border: 1px #DDD solid;
-    border-radius: 2px;
-    box-shadow: var(--color-shad) 0 5px 10px;
-    
-    width: 50%;
-    height: auto;
-    margin: 2% ;
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-}
-.form-div-in{
-    background-color: lavender;
-    border: 1px lavender solid;
-    border-radius: 2px;
-    height: auto;
+.titulador h2{
     margin: 0.5rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-input, textarea{
-    font-family: var(--font-family-alt);
-    font-size: 1rem;
-    border: 1px solid lavender;
-    border-radius: 10px;
-}
-.form-label{
-    display: block;
-    margin: 1%;
-    padding: 2%;
-}
-.form-btn{
-    text-align: center;
-    margin: 2%;
-    padding: 1%;
+    justify-content: start;
 }
 .btn-form{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: var(--color-snd);
     font-family: var(--font-family-alt);
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
     color: var(--color-txt-alt);
+    border: 1px solid var(--color-snd);
+    border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-    border: 2px var(--color-snd) solid;
-    border-radius: 30px;
-    margin: 0.5rem 0;
-    padding: 1rem;
+    justify-content: center;
 }
 .btn-form:hover{
     background-color: var(--color-trd);
-    border: var(--color-txt) 1px solid;
-    color: var(--color-txt);
 }
-
-/*pag. nota1, nota2*/
-.iframe-nota1, .iframe-nota2{
+.form-in{
+    background-image: url('img/freepng-joysticks2.png');
+    background-repeat: no-repeat;
+    background-color: var(--color-bg-alt);
+    border: 1px var(--color-bg-alt) solid;
+    border-radius: 0.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+.form{
+    background-color: var(--color-txt-alt);
+    border: var(--color-txt-alt) 1px solid;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+.form-in p label input, .form-in p label textarea{
+    font-family: var(--font-family-alt);
+    border: 1px solid var(--color-bg-alt);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    display: block;
+}
+.form-in p label{
+    display: block;
+}
+.form-in p{
+    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+    display: block;
+    text-align: left;
+}
+.form-out{
+    width: 50%;
+    background-color: var(--color-txt-alt);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 1rem 1rem;
+}
+.form-section{
+    margin: 0.5rem;
+    background-image: url('img/freepng-joysticks.png');
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
+/*corte de tablet*/
+@media only screen and (max-width: 768px) {
+}
+/*corte de mobile*/
+@media only screen and (max-width: 360px) {
+}
