@@ -30,16 +30,16 @@ main{
     margin: 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
+    min-height: 900px;
 }
 h1{
     font-family: var(--font-family-logo);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 h2, h3, h4{
     font-family: var(--font-family-alt);
     font-weight: var(--font-bold);
     margin: 0.5rem;
-    padding: 0.5rem;
 }
 p{
     font-family: var(--font-family-fst);
@@ -99,22 +99,19 @@ aside p a:hover{
     background-color: var(--color-fst);
     color: var(--color-txt);
     top: 0;
-    position: sticky;
-    z-index: 1;
     width: 100%;
     margin: 0 0 0.5rem 0;
-    padding: 0.5rem 5rem;
     display: flex;
     flex-direction: center;
-    justify-content: center;
-    max-height: 4rem;
+    justify-content: justify;
+    min-height: 2rem;
     box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
 }
 .logo{
     margin: 0.5rem;
-    width: 40%;
+    width: 35%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     align-items: center;
 }
@@ -124,7 +121,6 @@ aside p a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
 }
 .nav-main ul{
     margin: 0.5rem;
@@ -143,19 +139,18 @@ aside p a:hover{
 }
 .btn-nav{
     margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     background-color: var(--color-fst);
     font-weight: var(--font-bold);
+    font-size: 1.5rem;
     color: var(--color-txt);
-    border: 1px solid var(--color-shad);
-    border-radius: 10px;
+    border: 0px;
     cursor: pointer;
     display: inline-block;
 }
-.btn-nav:hover{
-    background-color: var(--color-trd);
+.btn-nav i{
+    display: none;
 }
-
 /*footer*/
 footer{
     background-color: var(--color-snd);
@@ -163,8 +158,8 @@ footer{
     bottom: 0;
     width: 100%;
     margin: 0.5rem 0 0 0;
-    padding: 0.5rem 5rem;
-    max-height: 8rem;
+    padding: 0.5rem;
+    min-height: 8rem;
     display: flex;
     flex-direction: center;
     justify-content: center;
@@ -219,6 +214,9 @@ footer a:hover {
     height: 22rem;
     display: flex;
 }
+.showcase-img{
+    display: none;
+}
 .stn-nota{
     margin: 0.5rem;
     display: flex;
@@ -228,6 +226,7 @@ footer a:hover {
     margin: 0.5rem 2rem;
     display: flex;
     justify-content: center;
+    background-color: var(--color-bg);
 }
 .nota1:hover, .nota2:hover, .nota3:hover {
     background-color: var(--color-txt-alt);
@@ -243,7 +242,7 @@ footer a:hover {
     background-color: var(--color-bg-alt);
     box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
     margin: 0.5rem;
-    width: 20%;
+    width: auto;
     float: left;
 }
 
@@ -335,23 +334,161 @@ footer a:hover {
     text-align: left;
 }
 .form-out{
-    width: 50%;
+    width: 36rem;
     background-color: var(--color-txt-alt);
     border-radius: 0.5rem;
     text-align: center;
     margin: 1rem;
     padding: 1rem 1rem 1rem;
 }
-.form-section{
+.stn-form{
     margin: 0.5rem;
     background-image: url('img/freepng-joysticks.png');
     background-repeat: no-repeat;
     background-position: right top;
 }
 
-/*corte de tablet*/
+/*corte medio*/
 @media only screen and (max-width: 768px) {
+    main{
+        margin: 0.5rem;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    /*navegacion*/
+    .logo{
+        margin: 1rem;
+        width: 80%;
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-main{
+        display: none;
+    }
+    .btn-nav i{ /*falta acomodar menu*/
+        display: flex;
+        justify-content: end;
+    }
+    /*footer*/
+    .rrss {
+        width: 33%;
+        margin: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*index*/
+    .showcase{
+        width: auto;
+        margin: 0.5rem;
+        background-image: url('img/consoles/pngwing-NintendoSwitch2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 17rem;
+    }
+    .showcase-video iframe{
+        border: #000 5px solid;
+        width: 24rem;
+        height: 14rem;
+        display: flex;
+    }
+    .consola{
+        display: none;
+    }
+    
+    /*contacto*/
+        .form-in{
+        background-image: url('img/freepng-joysticks2.png');
+        background-repeat: no-repeat;
+        background-color: var(--color-bg-alt);
+        border: 1px var(--color-bg-alt) solid;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .form{
+        background-color: var(--color-txt-alt);
+        border: var(--color-txt-alt) 1px solid;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+    }
+    .form-in p label input, .form-in p label textarea{
+        font-family: var(--font-family-alt);
+        border: 1px solid var(--color-bg-alt);
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        display: block;
+    }
+    .form-in p label{
+        display: block;
+    }
+    .form-in p{
+        font-size: 1.2rem;
+        font-weight: var(--font-bold);
+        display: block;
+        text-align: left;
+    }
+    .stn-form{
+        margin: 0.5rem;
+        background-image: url('img/freepng-joysticks.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
 }
-/*corte de mobile*/
-@media only screen and (max-width: 360px) {
+
+/*corte chico*/
+@media only screen and (max-width: 500px) {
+    /*footer*/
+    .icorrss {
+        margin: 0.2rem;
+    }
+    /*navegacion*/
+    .logo{
+        margin: 1rem;
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+    }
+    .btn-nav i{ /*falta acomodar menu*/
+        width: 25%;
+        display: flex;
+        justify-content: end;
+    }
+
+    /*index*/
+    .showcase{
+        width: auto;
+        margin: 0.5rem;
+        background-color: var(--color-shad);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 17rem;
+    }
+    .showcase-video iframe{
+        border: #000 5px solid;
+        width: auto;
+        display: flex;
+    }
+    
+    /*formulario*/
+    .stn-form{
+        background-color: var(--color-bg);
+    }
+    .form-out{
+        width: 100%;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
 }
