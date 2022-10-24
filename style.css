@@ -1,3 +1,15 @@
+body, header, main, footer{
+    border: red 3px solid;
+}
+nav, section, article, aside{
+    border: blue solid 3px;
+}
+ul, span, h2, h3, h4, p, a, img{
+    border: lightseagreen 3px solid;
+}
+div{
+    border: limegreen solid 3px;
+}
 *{
     box-sizing: border-box;
 }
@@ -102,55 +114,41 @@ aside p a:hover{
     width: 100%;
     margin: 0 0 0.5rem 0;
     display: flex;
-    flex-direction: center;
-    justify-content: justify;
+    justify-content: start;
     min-height: 2rem;
     box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
 }
-.logo{
+#encabezado .logo{
     margin: 0.5rem;
     width: 35%;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    justify-content: start;
 }
-.nav-main{
+#encabezado nav{
     margin: 0.5rem;
     width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    place-content: space-between;
 }
-.nav-main ul{
+#encabezado nav ul{
     margin: 0.5rem;
     display: flex;
     list-style: none;
     font-weight: 700;
 }
-.nav-main ul li{
+#encabezado nav ul li{
     padding: 0.5rem;
 }
-.nav-main ul li a{
+#encabezado nav ul li a{
     color: var(--color-txt);
 }
-.nav-main ul li a:hover{
+#encabezado nav ul li a:hover{
     border-bottom: 2px solid var(--color-txt);
 }
-.btn-nav{
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--color-fst);
-    font-weight: var(--font-bold);
-    font-size: 1.5rem;
-    color: var(--color-txt);
-    border: 0px;
-    cursor: pointer;
-    display: inline-block;
-}
-.btn-nav i{
+#menu, #menu-check{
     display: none;
 }
+
 /*footer*/
 footer{
     background-color: var(--color-snd);
@@ -341,6 +339,9 @@ footer a:hover {
     margin: 1rem;
     padding: 1rem 1rem 1rem;
 }
+.form-out a{
+    color: var(--color-txt);
+}
 .stn-form{
     margin: 0.5rem;
     background-image: url('img/freepng-joysticks.png');
@@ -348,29 +349,32 @@ footer a:hover {
     background-position: right top;
 }
 
-/*corte medio*/
-@media only screen and (max-width: 768px) {
+/*corte medio-ancho*/
+@media only screen and (max-width: 900px) {
     main{
         margin: 0.5rem;
     }
     h1{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     /*navegacion*/
-    .logo{
-        margin: 1rem;
-        width: 80%;
+    #encabezado{
         display: flex;
-        justify-content: start;
-        text-align: center;
+        place-content: flex-start;
         align-items: center;
     }
-    .nav-main{
-        display: none;
-    }
-    .btn-nav i{ /*falta acomodar menu*/
+    #encabezado .logo{
+        margin: 0.5rem;
+        width: 50%;
         display: flex;
-        justify-content: end;
+        justify-content: start;
+    }
+    #encabezado nav{
+        width: 100%;
+        display: inline;
+    }
+    #encabezado nav ul, #encabezado nav ul li{
+        display: inline;
     }
     /*footer*/
     .rrss {
@@ -378,6 +382,60 @@ footer a:hover {
         margin: 0.5rem;
         display: flex;
         flex-wrap: wrap;
+    }
+}
+/*corte medio*/
+@media only screen and (max-width: 768px){
+    #encabezado{
+        display: flex;
+        place-content: space-between;
+    }
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+    #menu{
+        display: block;
+        color: var(--color-txt);
+        font-size: 1.2rem;
+        border: 1px var(--color-shad) solid;
+        border-radius: 0.5rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        z-index: 10;
+    }
+    #mene:hover{
+        color: var(--color-txt-alt);
+        background-color: var(--color-shad);
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    #mene-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    #encabezado nav{
+        background-color: var(--color-fst);
+        position: absolute;
+        z-index: 1;
+        top: -0.5rem;
+        left: -0.5rem;
+        width: 30%;
+        height: 100%;
+        opacity: 0.9;
+    }
+    #encabezado nav ul, #encabezado nav ul li{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
     }
 
     /*index*/
@@ -401,70 +459,25 @@ footer a:hover {
     .consola{
         display: none;
     }
-    
-    /*contacto*/
-        .form-in{
-        background-image: url('img/freepng-joysticks2.png');
-        background-repeat: no-repeat;
-        background-color: var(--color-bg-alt);
-        border: 1px var(--color-bg-alt) solid;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-    }
-    .form{
-        background-color: var(--color-txt-alt);
-        border: var(--color-txt-alt) 1px solid;
-        border-radius: 0.5rem;
-        margin: 0.5rem;
-    }
-    .form-in p label input, .form-in p label textarea{
-        font-family: var(--font-family-alt);
-        border: 1px solid var(--color-bg-alt);
-        border-radius: 0.5rem;
-        font-size: 1.2rem;
-        justify-content: space-between;
-        display: block;
-    }
-    .form-in p label{
-        display: block;
-    }
-    .form-in p{
-        font-size: 1.2rem;
-        font-weight: var(--font-bold);
-        display: block;
-        text-align: left;
-    }
-    .stn-form{
-        margin: 0.5rem;
-        background-image: url('img/freepng-joysticks.png');
-        background-repeat: no-repeat;
-        background-position: right top;
-    }
 }
 
 /*corte chico*/
 @media only screen and (max-width: 500px) {
+    h1{
+        font-size: 1rem;
+    }
     /*footer*/
     .icorrss {
         margin: 0.2rem;
     }
     /*navegacion*/
     .logo{
-        margin: 1rem;
-        width: 70%;
+        margin: 0.5rem;
+        width: 75%;
         display: flex;
         justify-content: start;
-        text-align: center;
-        align-items: center;
     }
-    .btn-nav i{ /*falta acomodar menu*/
-        width: 25%;
-        display: flex;
-        justify-content: end;
-    }
-
+    
     /*index*/
     .showcase{
         width: auto;
@@ -480,15 +493,5 @@ footer a:hover {
         width: auto;
         display: flex;
     }
-    
-    /*formulario*/
-    .stn-form{
-        background-color: var(--color-bg);
-    }
-    .form-out{
-        width: 100%;
-        border-radius: 0.5rem;
-        text-align: center;
-        margin: 0.2rem;
-    }
+        
 }

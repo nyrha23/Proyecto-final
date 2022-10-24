@@ -18,22 +18,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!--header-->
-  <header id="encabezado">
-    <div class="logo">
-        <h1><a href="index.html">La cápsula del tiempo</a></h1>
-    </div>
-    <!--nav-->
-    <nav class="nav-main">
-      <ul class="nav-menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="siglo-20.html">Siglo 20</a></li>
-        <li><a href="siglo-21.html">Siglo 21</a></li>
-        <li><a href="gallery.html">Galería</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <button class="btn-nav" id="menu-burger"><i class="fa-solid fa-bars"></i></button>
-    </nav>
+    <!--header-->
+    <header id="encabezado">
+      <div class="logo">
+          <h1><a href="index.html">La cápsula del tiempo</a></h1>
+      </div>
+      <!--nav-->
+      <input type="checkbox" id="menu-check">
+      <label id="menu" for="menu-check">
+          <span id="menu-abrir"><i class="fa-solid fa-bars"></i></span>
+          <span id="menu-cerrar"><i class="fa-solid fa-skull-crossbones"></i></span>
+      </label>
+      <nav>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="siglo-20.html">Siglo 20</a></li>
+              <li><a href="siglo-21.html">Siglo 21</a></li>
+              <li><a href="gallery.html">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
   </header>
   <!--main-->
   <main>
