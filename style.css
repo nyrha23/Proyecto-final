@@ -121,6 +121,7 @@ aside p a:hover{
 #encabezado nav ul{
     margin: 0.5rem;
     display: flex;
+    align-items: center;
     list-style: none;
     font-weight: 700;
 }
@@ -129,6 +130,7 @@ aside p a:hover{
 }
 #encabezado nav ul li a{
     color: var(--color-txt);
+
 }
 #encabezado nav ul li a:hover{
     border-bottom: 2px solid var(--color-txt);
@@ -160,7 +162,7 @@ footer a:hover {
     width: 33%;
     margin: 0.5rem;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
 }
 .footerlogo {
