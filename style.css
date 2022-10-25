@@ -1,15 +1,3 @@
-body, header, main, footer{
-    border: red 3px solid;
-}
-nav, section, article, aside{
-    border: blue solid 3px;
-}
-ul, span, h2, h3, h4, p, a, img{
-    border: lightseagreen 3px solid;
-}
-div{
-    border: limegreen solid 3px;
-}
 *{
     box-sizing: border-box;
 }
@@ -419,7 +407,7 @@ footer a:hover {
     #menu-check:checked ~ label #menu-abrir{
         display: none;
     }
-    #mene-check:checked ~ label #menu-cerrar{
+    #menu-check:checked ~ label #menu-cerrar{
         display: block;
     }
     #encabezado nav{
