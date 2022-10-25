@@ -312,6 +312,8 @@ footer a:hover {
     font-size: 1.2rem;
     justify-content: space-between;
     display: block;
+    resize: vertical;
+    max-height: 15rem;
 }
 .form-in p label{
     display: block;
@@ -390,6 +392,31 @@ footer a:hover {
         margin: 0.5rem;
         display: flex;
         flex-wrap: wrap;
+    }
+
+
+    .stn-form{
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    .btn-form{
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-snd);
+        font-family: var(--font-family-alt);
+        font-size: 1.1rem;
+        font-weight: var(--font-bold);
+        color: var(--color-txt-alt);
+        border: 1px solid var(--color-snd);
+        border-radius: 10px;
+        cursor: pointer;
+        display: inline-block;
+        justify-content: center;
     }
 }
 /*corte medio*/
