@@ -187,7 +187,7 @@ footer a:hover {
 /*index*/
 .showcase{
     width: auto;
-    margin: 1rem -2rem;
+    margin: 1rem -3rem;
     background-image: url('img/consoles/pngwing-NintendoSwitch1.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -199,8 +199,8 @@ footer a:hover {
 }
 .showcase-video iframe{
     border: #000 5px solid;
-    width: 35rem;
-    height: 20rem;
+    width: 38rem;
+    height: 22rem;
     display: flex;
 }
 .showcase-img{
@@ -374,6 +374,11 @@ footer a:hover {
     }
     #encabezado nav ul, #encabezado nav ul li{
         display: inline;
+    }
+
+    .showcase-video iframe{
+        width: 35rem;
+        height: 20rem;
     }
 
     .showcase{
