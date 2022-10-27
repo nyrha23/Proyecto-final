@@ -1,71 +1,70 @@
-*{
+* {
     box-sizing: border-box;
-}
-:root{
+  }
+  :root {
     --color-bg: #eee;
-    --color-bg-alt: #ECEFF1;
+    --color-bg-alt: #eceff1;
     --color-txt: #212121;
-    --color-txt-alt: #FFF;
-    --color-fst: #EDE7F6;
-    --color-snd: #1D1833;
+    --color-txt-alt: #fff;
+    --color-fst: #ede7f6;
+    --color-snd: #1d1833;
     --color-trd: #ffa500;
     --color-shad: #969696;
-    --font-family-logo: 'Bungee Spice', cursive;
-    --font-family-fst: 'Dosis', sans-serif;
-    --font-family-alt: 'Indie Flower', cursive;
+    --font-family-logo: "Bungee Spice", cursive;
+    --font-family-fst: "Dosis", sans-serif;
+    --font-family-alt: "Indie Flower", cursive;
     --font-bold: 700;
-}
-html{
+  }
+  html {
     font-size: 1rem;
-}
-body{
+  }
+  body {
     background-color: var(--color-bg);
     background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23d1c4e9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     font-family: var(--font-family-fst);
     color: var(--color-txt);
     height: 100%;
     margin: 0;
-}
-main{
+  }
+  main {
     margin: 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     min-height: 900px;
-}
-h1{
+  }
+  h1 {
     font-family: var(--font-family-logo);
     font-size: 1.5rem;
-}
-h2, h3, h4{
+  }
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-family-alt);
     font-weight: var(--font-bold);
     margin: 0.5rem;
-}
-p{
+  }
+  p {
     font-family: var(--font-family-fst);
     margin: 0.5rem;
     padding: 0.5rem;
-}
-a{
+  }
+  a {
     text-decoration: none;
     margin: 0.1rem;
-}
-aside{
+  }
+  #nota {
     font-size: 0.8rem;
     margin: 0.1rem 0 0 0;
     width: 100%;
     display: flex;
-}
-aside p a{
+  }
+  #nota p a {
     color: var(--color-txt);
     font-weight: var(--font-bold);
-}
-aside p a:hover{
-    border-bottom: var(--color-txt);
-}
-
-/*botones de leer más o ver o continuar*/
-.btn{
+  }
+  
+  /*botones de leer más o ver o continuar*/
+  .btn {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--color-bg-alt);
@@ -75,11 +74,11 @@ aside p a:hover{
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-}
-.btn:hover{
+  }
+  .btn:hover {
     background-color: var(--color-trd);
-}
-.btn-blanco{
+  }
+  .btn-blanco {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--color-txt);
@@ -89,13 +88,13 @@ aside p a:hover{
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
-}
-.btn-blanco:hover{
+  }
+  .btn-blanco:hover {
     background-color: var(--color-trd);
-}
-
-/*navegacion*/
-#encabezado{
+  }
+  
+  /*navegacion*/
+  #encabezado {
     background-color: var(--color-fst);
     color: var(--color-txt);
     top: 0;
@@ -105,42 +104,42 @@ aside p a:hover{
     justify-content: start;
     min-height: 2rem;
     box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
-}
-#encabezado .logo{
+  }
+  #encabezado .logo {
     margin: 0.5rem;
     width: 35%;
     display: flex;
     justify-content: start;
-}
-#encabezado nav{
+  }
+  #encabezado nav {
     margin: 0.5rem;
     width: 60%;
     display: flex;
     place-content: space-between;
-}
-#encabezado nav ul{
+  }
+  #encabezado nav ul {
     margin: 0.5rem;
     display: flex;
     align-items: center;
     list-style: none;
     font-weight: 700;
-}
-#encabezado nav ul li{
+  }
+  #encabezado nav ul li {
     padding: 0.5rem;
-}
-#encabezado nav ul li a{
+  }
+  #encabezado nav ul li a {
     color: var(--color-txt);
-
-}
-#encabezado nav ul li a:hover{
+  }
+  #encabezado nav ul li a:hover {
     border-bottom: 2px solid var(--color-txt);
-}
-#menu, #menu-check{
+  }
+  #menu,
+  #menu-check {
     display: none;
-}
-
-/*footer*/
-footer{
+  }
+  
+  /*footer*/
+  footer {
     background-color: var(--color-snd);
     color: var(--color-txt-alt);
     bottom: 0;
@@ -149,46 +148,45 @@ footer{
     padding: 0.5rem;
     min-height: 8rem;
     display: flex;
-    flex-direction: center;
     justify-content: center;
-}
-footer a {
+  }
+  footer a {
     color: var(--color-txt-alt);
-}
-footer a:hover {
+  }
+  footer a:hover {
     color: var(--color-trd);
-}
-.autores {
+  }
+  .autores {
     width: 33%;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.footerlogo {
+  }
+  .footerlogo {
     width: 33%;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: flex-end;
-}
-.rrss {
+  }
+  .rrss {
     width: 33%;
     margin: 0.5rem;
     display: flex;
     justify-content: end;
     align-items: center;
-}
-.icorrss {
+  }
+  .icorrss {
     margin: 0.5rem;
-}
-
-/*index*/
-.showcase{
+  }
+  
+  /*index*/
+  .showcase {
     width: auto;
     margin: 1rem -3rem;
-    background-image: url('img/consoles/pngwing-NintendoSwitch1.png');
+    background-image: url("img/consoles/pngwing-NintendoSwitch1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -196,83 +194,88 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     height: 28rem;
-}
-.showcase-video iframe{
+  }
+  .showcase-video iframe {
     border: #000 5px solid;
     width: 38rem;
     height: 22rem;
     display: flex;
-}
-.showcase-img{
+  }
+  .showcase-img {
     display: none;
-}
-.stn-nota{
+  }
+  .stn-nota {
     margin: 0.5rem;
     display: flex;
-}
-.nota1, .nota2, .nota3 {
+  }
+  .nota1,
+  .nota2,
+  .nota3 {
     padding: 0.5rem;
     margin: 0.5rem 2rem;
     display: flex;
     justify-content: center;
     background-color: var(--color-bg);
-}
-.nota1:hover, .nota2:hover, .nota3:hover {
+  }
+  .nota1:hover,
+  .nota2:hover,
+  .nota3:hover {
     background-color: var(--color-txt-alt);
     margin: 0;
     padding: 2% 4%;
     transition: 300ms;
-}
-.nota1:not(hover), .nota2:not(hover), .nota3:not(hover) {
+  }
+  .nota1:not(hover),
+  .nota2:not(hover),
+  .nota3:not(hover) {
     margin: 0% 2%;
     transition: 300ms;
-}
-.consola  {
+  }
+  .consola {
     background-color: var(--color-bg-alt);
     box-shadow: var(--color-shad) 0 0.3rem 0.3rem;
     margin: 0.5rem;
     width: auto;
     float: left;
-}
-
-/*galeria*/
-.gallery {
+  }
+  
+  /*galeria*/
+  .gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.polaroid {
+  }
+  .polaroid {
     background-color: var(--color-txt-alt);
     border-radius: 0.5rem;
     text-align: center;
     margin: 0.5rem;
     padding: 1rem 1rem 1rem;
-}
-.polaroid img {
+  }
+  .polaroid img {
     background-color: var(--color-bg-alt);
     border-radius: 0.5rem;
     height: 18rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-.polaroid:hover {
+  }
+  .polaroid:hover {
     transform: rotate(-5deg);
-}
-
-/*contacto*/
-.titulador{
+  }
+  
+  /*contacto*/
+  .titulador {
     top: 0;
     display: flex;
-    flex-direction: center;
     width: 100%;
     margin: 0 0 0.5rem 0;
-}
-.titulador h2{
+  }
+  .titulador h2 {
     margin: 0.5rem;
     justify-content: start;
-}
-.btn-form{
+  }
+  .btn-form {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--color-snd);
@@ -285,12 +288,12 @@ footer a:hover {
     cursor: pointer;
     display: inline-block;
     justify-content: center;
-}
-.btn-form:hover{
+  }
+  .btn-form:hover {
     background-color: var(--color-trd);
-}
-.form-in{
-    background-image: url('img/freepng-joysticks2.png');
+  }
+  .form-in {
+    background-image: url("img/freepng-joysticks2.png");
     background-repeat: no-repeat;
     background-color: var(--color-bg-alt);
     border: 1px var(--color-bg-alt) solid;
@@ -298,14 +301,15 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     margin: 1rem;
-}
-.form{
+  }
+  .form {
     background-color: var(--color-txt-alt);
     border: var(--color-txt-alt) 1px solid;
     border-radius: 0.5rem;
     margin: 0.5rem;
-}
-.form-in p label input, .form-in p label textarea{
+  }
+  .form-in p label input,
+  .form-in p label textarea {
     font-family: var(--font-family-alt);
     border: 1px solid var(--color-bg-alt);
     border-radius: 0.5rem;
@@ -314,219 +318,220 @@ footer a:hover {
     display: block;
     resize: vertical;
     max-height: 15rem;
-}
-.form-in p label{
+  }
+  .form-in p label {
     display: block;
-}
-.form-in p{
+  }
+  .form-in p {
     font-size: 1.2rem;
     font-weight: var(--font-bold);
     display: block;
     text-align: left;
-}
-.form-out{
+  }
+  .form-out {
     width: 36rem;
     background-color: var(--color-txt-alt);
     border-radius: 0.5rem;
     text-align: center;
     margin: 1rem;
     padding: 1rem 1rem 1rem;
-}
-.form-out a{
+  }
+  .form-out a {
     color: var(--color-txt);
-}
-.stn-form{
+  }
+  .stn-form {
     margin: 0.5rem;
-    background-image: url('img/freepng-joysticks.png');
+    background-image: url("img/freepng-joysticks.png");
     background-repeat: no-repeat;
     background-position: right top;
-}
-
-/*s.xxi*/
-.stn-xxi{
+  }
+  
+  /*s.xxi*/
+  .stn-xxi {
     margin: 0.5rem;
-}
-.stn-xxi:hover{
+  }
+  .stn-xxi:hover {
     background-color: var(--color-txt-alt);
-}
-
-/*corte medio-ancho*/
-@media only screen and (max-width: 900px) {
-    main{
-        margin: 0.5rem;
+  }
+  
+  /*corte medio-ancho*/
+  @media only screen and (max-width: 900px) {
+    main {
+      margin: 0.5rem;
     }
-    h1{
-        font-size: 1.1rem;
+    h1 {
+      font-size: 1.1rem;
     }
     /*navegacion*/
-    #encabezado{
-        display: flex;
-        place-content: flex-start;
-        align-items: center;
+    #encabezado {
+      display: flex;
+      place-content: flex-start;
+      align-items: center;
     }
-    #encabezado .logo{
-        margin: 0.5rem;
-        width: 50%;
-        display: flex;
-        justify-content: start;
+    #encabezado .logo {
+      margin: 0.5rem;
+      width: 50%;
+      display: flex;
+      justify-content: start;
     }
-    #encabezado nav{
-        width: 100%;
-        display: inline;
+    #encabezado nav {
+      width: 100%;
+      display: inline;
     }
-    #encabezado nav ul, #encabezado nav ul li{
-        display: inline;
+    #encabezado nav ul,
+    #encabezado nav ul li {
+      display: inline;
     }
-
-    .showcase-video iframe{
-        width: 35rem;
-        height: 20rem;
+  
+    .showcase-video iframe {
+      width: 35rem;
+      height: 20rem;
     }
-
-    .showcase{
-        margin: 1rem -0.5rem;
+  
+    .showcase {
+      margin: 1rem -0.5rem;
     }
     /*footer*/
     .rrss {
-        width: 33%;
-        margin: 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
+      width: 33%;
+      margin: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
     }
-
-
-    .stn-form{
-        display: flex;
-        justify-content: center;
-        margin: 0.5rem;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-position: right top;
+  
+    .stn-form {
+      display: flex;
+      justify-content: center;
+      margin: 0.5rem;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: right top;
     }
-
-    .btn-form{
-        margin: 0.5rem;
-        padding: 0.5rem 1rem;
-        background-color: var(--color-snd);
-        font-family: var(--font-family-alt);
-        font-size: 1.1rem;
-        font-weight: var(--font-bold);
-        color: var(--color-txt-alt);
-        border: 1px solid var(--color-snd);
-        border-radius: 10px;
-        cursor: pointer;
-        display: inline-block;
-        justify-content: center;
+  
+    .btn-form {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--color-snd);
+      font-family: var(--font-family-alt);
+      font-size: 1.1rem;
+      font-weight: var(--font-bold);
+      color: var(--color-txt-alt);
+      border: 1px solid var(--color-snd);
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-block;
+      justify-content: center;
     }
-}
-/*corte medio*/
-@media only screen and (max-width: 768px){
-    #encabezado{
-        display: flex;
-        place-content: space-between;
+  }
+  /*corte medio*/
+  @media only screen and (max-width: 768px) {
+    #encabezado {
+      display: flex;
+      place-content: space-between;
     }
-    #menu-check:not(:checked) ~ nav{
-        display: none;
+    #menu-check:not(:checked) ~ nav {
+      display: none;
     }
-    #menu-check:checked ~ nav{
-        display: block;
+    #menu-check:checked ~ nav {
+      display: block;
     }
-    #menu{
-        display: block;
-        color: var(--color-txt);
-        font-size: 1.2rem;
-        border: 1px var(--color-shad) solid;
-        border-radius: 0.5rem;
-        margin: 0.5rem;
-        padding: 0.5rem;
-        position: absolute;
-        top: 0.75rem;
-        right: 0.75rem;
-        z-index: 10;
+    #menu {
+      display: block;
+      color: var(--color-txt);
+      font-size: 1.2rem;
+      border: 1px var(--color-shad) solid;
+      border-radius: 0.5rem;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      z-index: 10;
     }
-    #mene:hover{
-        color: var(--color-txt-alt);
-        background-color: var(--color-shad);
+    #menu:hover {
+      color: var(--color-txt-alt);
+      background-color: var(--color-shad);
     }
-    #menu-cerrar{
-        display: none;
+    #menu-cerrar {
+      display: none;
     }
-    #menu-check:checked ~ label #menu-abrir{
-        display: none;
+    #menu-check:checked ~ label #menu-abrir {
+      display: none;
     }
-    #menu-check:checked ~ label #menu-cerrar{
-        display: block;
+    #menu-check:checked ~ label #menu-cerrar {
+      display: block;
     }
-    #encabezado nav{
-        background-color: var(--color-fst);
-        position: absolute;
-        z-index: 1;
-        top: -0.5rem;
-        left: -0.5rem;
-        width: 30%;
-        height: 100%;
-        opacity: 0.9;
+    #encabezado nav {
+      background-color: var(--color-fst);
+      position: absolute;
+      z-index: 1;
+      top: -0.5rem;
+      left: -0.5rem;
+      width: 30%;
+      height: 100%;
+      opacity: 0.9;
     }
-    #encabezado nav ul, #encabezado nav ul li{
-        display: flex;
-        flex-direction: column;
-        margin: 0.5rem;
+    #encabezado nav ul,
+    #encabezado nav ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem;
     }
-
+  
     /*index*/
-    .showcase{
-        width: auto;
-        margin: 0.5rem -0.5rem;
-        background-image: url('img/consoles/pngwing-NintendoSwitch2.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 17rem;
+    .showcase {
+      width: auto;
+      margin: 0.5rem -0.5rem;
+      background-image: url("img/consoles/pngwing-NintendoSwitch2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 17rem;
     }
-    .showcase-video iframe{
-        border: #000 5px solid;
-        width: 24rem;
-        height: 14rem;
-        display: flex;
+    .showcase-video iframe {
+      border: #000 5px solid;
+      width: 24rem;
+      height: 14rem;
+      display: flex;
     }
-    .consola{
-        display: none;
+    .consola {
+      display: none;
     }
-}
-
-/*corte chico*/
-@media only screen and (max-width: 500px) {
-    h1{
-        font-size: 1rem;
+  }
+  
+  /*corte chico*/
+  @media only screen and (max-width: 500px) {
+    h1 {
+      font-size: 1rem;
     }
     /*footer*/
     .icorrss {
-        margin: 0.2rem;
+      margin: 0.2rem;
     }
     /*navegacion*/
-    .logo{
-        margin: 0.5rem;
-        width: 75%;
-        display: flex;
-        justify-content: start;
+    .logo {
+      margin: 0.5rem;
+      width: 75%;
+      display: flex;
+      justify-content: start;
     }
-    
+  
     /*index*/
-    .showcase{
-        width: auto;
-        margin: 0.5rem;
-        background-image: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 17rem;
+    .showcase {
+      width: auto;
+      margin: 0.5rem;
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 17rem;
     }
-    .showcase-video iframe{
-        border: #000 5px solid;
-        width: auto;
-        display: flex;
+    .showcase-video iframe {
+      border: #000 5px solid;
+      width: auto;
+      display: flex;
     }
-        
-}
+  }
+  
