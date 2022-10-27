@@ -348,8 +348,31 @@
   
   /*s.xxi*/
   .stn-xxi {
+    display: flex;
+    flex-direction: column;
     margin: 0.5rem;
+    background-color: #eceff1;
+    border: 1px solid grey;
+    border-radius: 20px;
+  } 
+  
+  .stn-xxi:hover{
+    padding: 0 3rem;
+    margin: 0.5rem -2.5rem;
+    transition: 300ms;
   }
+  
+  .stn-xxi:not(hover){
+    margin: 0.5rem;
+    transition: 300ms;
+  } 
+  
+  .stn-xxi img {
+    display: flex;
+    align-self: center;
+    width: min-content;
+  }
+
   .stn-xxi:hover {
     background-color: var(--color-txt-alt);
   }
